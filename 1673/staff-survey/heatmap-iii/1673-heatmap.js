@@ -1,6 +1,4 @@
 window.onload = function() {
-  console.log("1673-heatmap JS loaded!");
-
   var margin = {top: 100, right: 50, bottom: 100, left: 50};
 
   var svg = d3.select("#departmentHeatmap").select("svg");
