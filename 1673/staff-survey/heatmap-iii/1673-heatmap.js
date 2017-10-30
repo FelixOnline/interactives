@@ -1,3 +1,5 @@
+console.log("1673-heatmap JS loaded!");
+
 var margin = {top: 225, right: 100, bottom: 100, left: 275};
 
 var width = 1400 - margin.left - margin.right,
