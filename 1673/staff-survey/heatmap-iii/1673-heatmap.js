@@ -1,15 +1,13 @@
 window.onload = function() {
   console.log("1673-heatmap JS loaded!");
 
-  var margin = {top: 225, right: 100, bottom: 100, left: 275};
+  var margin = {top: 100, right: 50, bottom: 100, left: 50};
 
-  var width = 1400 - margin.left - margin.right,
-      height = 725 - margin.top - margin.bottom;
+  var svg = d3.select("#departmentHeatmap").select("svg");
+  var width = svg.attr("width") - margin.left - margin.right,
+      height = svg.attr("height") - margin.top - margin.bottom;
 
-  var svg = d3.select("#departmentHeatmap").select("svg")
-    // .attr("width", width + margin.left + margin.right)
-    // .attr("height", height + margin.top + margin.bottom)
-    .append("g")
+  svg.append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   d3.csv("https://raw.githubusercontent.com/FelixOnline/interactives/master/1673/staff-survey/heatmap-iii/data.csv", (error, data) => {
