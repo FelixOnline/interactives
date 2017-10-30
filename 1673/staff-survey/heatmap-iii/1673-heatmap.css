@@ -1,0 +1,24 @@
+div.tooltip{
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  border: 1px #b7b7b7 solid;
+  pointer-events: none;
+  width: 50px;
+}
+
+text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+rect {
+  stroke: white;
+}
